@@ -1,0 +1,9 @@
+vi:
+    layouts:
+      application:
+        title: "The Pragmatic Bookshelf"
+        home: "Trang chủ"
+        questions: "Thắc mắc"
+        news: "Tin tức"
+        contact: "Liên hệ"
+  
