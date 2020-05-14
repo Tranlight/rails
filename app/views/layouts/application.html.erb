@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog</title>
+    <%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
+
+            <%= stylesheet_link_tag "application", media: "all", 'data-turbolinks-track': "reload" %>
+                <%= javascript_include_tag "application", 'data-turbolinks-track': "reload" %>
+</head>
+
+<body class='<%= controller.controller_name %>'>
+    <div id="banner">
+        <h1>The Pragmatic Bookshelf</h1>
+        <span class="title"><%= @page_title %></span>
+    </div>
+    <div id="columns">
+        <div id="side">
+            <ul>
+                <li><a href="http://www....">Home</a></li>
+                <li><a href="http://www..../faq">Questions</a></li>
+                <li><a href="http://www..../news">News</a></li>
+                <li><a href="http://www..../contact">Contact</a></li>
+            </ul>
+            <div id="cart">
+                <% if @cart %>
+                    <%= render @cart %>
+                        <% end %>
+            </div>
+        </div>
+        <div id="main">
+            <%= yield %>
+        </div>
+    </div>
+</body>
+
+</html>
