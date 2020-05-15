@@ -7,15 +7,18 @@ vi:
         separator: "."
         delimiter: ","
         format:    "%n %u"
+
   store:
     index:
       title_html: "Your Pragmatic Catalog"
       add_html: "Thêm vào giỏ"
+
   carts:
     cart: 
       title: "Giỏ hàng" 
       empty: "Hủy giỏ"
       checkout: "Thanh toán"
+
   layouts:
     application:
       title: "The Pragmatic Bookshelf"
@@ -23,4 +26,23 @@ vi:
       questions: "Thắc mắc"
       news: "Tin tức"
       contact: "Liên hệ"
-  
+
+  errors:
+    template:
+      body:        "Một vài trường input đang gặp lỗi:"
+      header:       
+        one:       "1 error prohibited this %{model} from being saved"
+        other:     "%{count} errors prohibited this %{model} from being saved"
+
+  orders:
+    new:
+      legend:       "Nhập vào thông tin"
+    form:
+      name:         "Tên"
+      address_html: "Địa chỉ"
+      email:        "E-mail"
+      pay_type:     "Phương thức thanh toán"
+      pay_prompt_html: "Chọn một phương thức"
+      submit:       "Đặt hàng"
+
+  thanks:          "Cảm ơn bạn"
