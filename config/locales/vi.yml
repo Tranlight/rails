@@ -1,9 +1,26 @@
 vi:
-    layouts:
-      application:
-        title: "The Pragmatic Bookshelf"
-        home: "Trang chủ"
-        questions: "Thắc mắc"
-        news: "Tin tức"
-        contact: "Liên hệ"
+  number:
+    currency:
+      format:
+        unit:      "VNĐ"
+        precision: 2
+        separator: "."
+        delimiter: ","
+        format:    "%n %u"
+  store:
+    index:
+      title_html: "Your Pragmatic Catalog"
+      add_html: "Thêm vào giỏ"
+  carts:
+    cart: 
+      title: "Giỏ hàng" 
+      empty: "Hủy giỏ"
+      checkout: "Thanh toán"
+  layouts:
+    application:
+      title: "The Pragmatic Bookshelf"
+      home: "Trang chủ"
+      questions: "Thắc mắc"
+      news: "Tin tức"
+      contact: "Liên hệ"
   

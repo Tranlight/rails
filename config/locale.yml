@@ -1,0 +1,12 @@
+default: &default
+  "Việt Nam": vi
+  English: en
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
